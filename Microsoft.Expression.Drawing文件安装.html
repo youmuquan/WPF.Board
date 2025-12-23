@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://www.cnblogs.com/runningRain/p/13820566.html -->
+<html lang="zh-cn" style="--olcb-folder-code-block-max-height: 80vh; --cnb-code-bg: rgb(245, 245, 245); --cnb-code-font-size: 12px; --cnb-code-color: rgb(68, 68, 68);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="origin-when-cross-origin">
+    <meta name="keywords" content="Blend,WPF,C#">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <style>#home :not(.cnblogs_code):not(.cnblogs_Highlighter)>pre:not([highlighted]):not([class*="brush:"]) code:not(.hljs), :not(.cnblogs_code):not(.cnblogs_Highlighter)>pre:not([highlighted]):not([class*="brush:"]) code:not(.hljs) {background: rgb(245, 245, 245);
+        padding: 12px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 3px;
+        border-color: transparent;
+        color: rgb(68, 68, 68);
+        font-family: "Courier New", sans-serif;
+        font-size: 12px</style><link rel="stylesheet" href="./Microsoft.Expression.Drawing文件安装 - 积跬步---行千里 - 博客园_files/blog-common.min.css">
+    
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "@id": "https://www.cnblogs.com/runningRain/p/13820566.html",
+      "headline": "Microsoft.Expression.Drawing文件安装",
+      "description": "使用Blend的绘制功能，需要引用 Microsoft.Expression.Drawing 库文件， xmlns:ed=\u0026quot;http://schemas.microsoft.com/expression/2010/drawing\u0026quot; \u0026lt;UserControl x:Class=\u0026quot;CircleProgre",
+      "image": [
+        
+      ],
+      "author": {
+        "@type": "Person",
+        "@id": "https://www.cnblogs.com/runningRain/",
+        "name": "积跬步---行千里",
+        "url": "https://www.cnblogs.com/runningRain/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://www.cnblogs.com/",
+        "name": "博客园",
+        "url": "https://www.cnblogs.com/"
+      },
+      "datePublished": "2020-10-15T14:56:00.0000000&#x2B;08:00",
+      "dateModified": "2020-10-15T14:56:00.0000000&#x2B;08:00",
+      "wordCount": "4231",
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://www.cnblogs.com/runningRain/",
+        "name": "积跬步---行千里",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://www.cnblogs.com/",
+          "name": "博客园"
+        }
+      }
+    }
+    </script>
+
+    <script>
+        var currentBlogId = 294466;
+        var currentBlogApp = 'runningRain';
+        var isLogined = false;
+        var isBlogOwner = false;
+        var skinName = 'sea';
+        var visitorUserId = '';
+        window.hasCustomScript = false;
+        window.cb_enable_mathjax = false;
+        window.mathEngine = 0;
+        window.codeHighlightEngine = 1;
+        window.enableCodeLineNumber = false;
+        window.codeHighlightTheme = 'cnblogs';
+        window.darkModeCodeHighlightTheme = 'vs2015';
+        window.isDarkCodeHighlightTheme = false;
+        window.isDarkModeCodeHighlightThemeDark = true;
+        window.isDisableCodeHighlighter = false;
+        window.enableCodeThemeTypeFollowSystem = false;
+        window.enableMacStyleCodeBlock = false;
+
+    </script>
+        <script>
+            window.currentPostId = 13820566;
+            window.currentPostDateAdded = '2020-10-15 14:56';
+        </script>
+    <script src="./Microsoft.Expression.Drawing文件安装 - 积跬步---行千里 - 博客园_files/jquery-3.3.1.min.js.下载"></script>
+    <script src="./Microsoft.Expression.Drawing文件安装 - 积跬步---行千里 - 博客园_files/blog-common.min.js.下载"></script><style>.medium-zoom-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 300ms;
+  will-change: opacity;
+}
+
+.medium-zoom--opened .medium-zoom-overlay {
+  cursor: pointer;
+  cursor: zoom-out;
+  opacity: 1;
+}
+
+.medium-zoom-image {
+  cursor: pointer;
+  cursor: zoom-in;
+  /*
+    The `transition` is marked as "!important" for the animation to happen
+    even though it's overriden by another inline `transition` style attribute.
+
+    This is problematic with frameworks that generate inline styles on their
+    images (e.g. Gatsby).
+
+    See https://github.com/francoischalifour/medium-zoom/issues/110
+   */
+  transition: transform 300ms cubic-bezier(0.2, 0, 0.2, 1) !important;
+}
+
+.medium-zoom-image--hidden {
+  visibility: hidden;
+}
+
+.medium-zoom-image--opened {
+  position: relative;
+  cursor: pointer;
+  cursor: zoom-out;
+  will-change: transform;
+}
+</style><script id="hljs-script" src="./Microsoft.Expression.Drawing文件安装 - 积跬步---行千里 - 博客园_files/highlight.min.js.下载" type="text/javascript" async=""></script>
+    
+</head>
+<body class="skin-sea has-navbar has-bannerbar">
+  <div class="post">
+	<h1 class="postTitle"><a id="cb_post_title_url" class="postTitle2 vertical-middle" href="https://www.cnblogs.com/runningRain/p/13820566.html" title="发布于 2020-10-15 14:56">
+    <span role="heading" aria-level="2">Microsoft.Expression.Drawing文件安装</span>
+    
+
+</a>
+</h1>
+	<div id="cnblogs_post_body" class="blogpost-body blogpost-body-html">
+<p>使用Blend的绘制功能，需要引用 Microsoft.Expression.Drawing 库文件，</p>
+<div class="cnblogs_code">
+<pre>xmlns:ed=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">http://schemas.microsoft.com/expression/2010/drawing</span><span style="color: rgba(128, 0, 0, 1)">"</span></pre>
+</div>
+<p>&nbsp;</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Microsoft.Expression.Drawing文件安装 - 积跬步---行千里 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre>&lt;UserControl x:Class=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">CircleProgressBarDemo2.UserControls.LoadingRing</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">
+             xmlns</span>=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">http://schemas.microsoft.com/winfx/2006/xaml/presentation</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">
+             xmlns:x</span>=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">http://schemas.microsoft.com/winfx/2006/xaml</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">
+             xmlns:mc</span>=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">http://schemas.openxmlformats.org/markup-compatibility/2006</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)"> 
+             xmlns:d</span>=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">http://schemas.microsoft.com/expression/blend/2008</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)"> 
+             xmlns:ed</span>=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">http://schemas.microsoft.com/expression/2010/drawing</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">
+             xmlns:local</span>=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">clr-namespace:CircleProgressBarDemo2.UserControls</span><span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(0, 0, 0, 1)">
+             mc:Ignorable</span>=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">d</span><span style="color: rgba(128, 0, 0, 1)">"</span>&gt;
+    &lt;Viewbox&gt;
+        &lt;Grid&gt;
+            &lt;Ellipse Stroke=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">Gray</span><span style="color: rgba(128, 0, 0, 1)">"</span> StrokeThickness=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">3</span><span style="color: rgba(128, 0, 0, 1)">"</span> Opacity=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">0.6</span><span style="color: rgba(128, 0, 0, 1)">"</span>/&gt;
+            &lt;ed:Arc ArcThickness=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">3</span><span style="color: rgba(128, 0, 0, 1)">"</span> EndAngle=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">0</span><span style="color: rgba(128, 0, 0, 1)">"</span> Margin=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">0</span><span style="color: rgba(128, 0, 0, 1)">"</span> Stretch=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">None</span><span style="color: rgba(128, 0, 0, 1)">"</span> Stroke=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">Transparent</span><span style="color: rgba(128, 0, 0, 1)">"</span> StrokeThickness=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">0</span><span style="color: rgba(128, 0, 0, 1)">"</span> StartAngle=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">0</span><span style="color: rgba(128, 0, 0, 1)">"</span> Fill=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">#FF0071BC</span><span style="color: rgba(128, 0, 0, 1)">"</span> x:Name=<span style="color: rgba(128, 0, 0, 1)">"</span><span style="color: rgba(128, 0, 0, 1)">EllipseFill</span><span style="color: rgba(128, 0, 0, 1)">"</span>/&gt;
+        &lt;/Grid&gt;
+    &lt;/Viewbox&gt;
+&lt;/UserControl&gt;</pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./Microsoft.Expression.Drawing文件安装 - 积跬步---行千里 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p>1. 使用 Nuget 添加对&nbsp;Microsoft.Expression.Drawing <small class="text-nowrap">3.0.0</small> 的引用（<a href="https://www.nuget.org/packages/Microsoft.Expression.Drawing/" target="_blank" rel="noopener nofollow">https://www.nuget.org/packages/Microsoft.Expression.Drawing/</a>）</p>
+<p>打开Nuget程序包管理器控制台，输入以下命令即可完成安装：</p>
+<div class="cnblogs_code">
+<pre>Install-Package Microsoft.Expression.Drawing -Version <span style="color: rgba(128, 0, 128, 1)">3.0</span>.<span style="color: rgba(128, 0, 128, 1)">0</span></pre>
+</div>
+<p>&nbsp;</p>
+</div>
+<div class="clear"></div>
+</body></html>
